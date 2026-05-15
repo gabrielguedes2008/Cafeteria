@@ -27,7 +27,8 @@ nav {
 }
 
 .nav-box {
-    margin-left: 900px;
+    width: 1480px;
+    text-align: right;
 }
 
 .nav-box a {
