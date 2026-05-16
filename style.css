@@ -100,12 +100,12 @@ header {
 .row-1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    margin-top: 50px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 40px;
     padding: 30px;
     color: var(--cor04);
-    margin: auto;
     width: 1400px;
-    margin-top: 50px;
 }
 
 .row-1 img {
@@ -127,8 +127,8 @@ header {
     grid-template-columns: 1fr 1fr 1fr;
     width: 1453px;
     justify-content: center;
+    margin-top: 100px;
     margin: auto;
-    margin-top: 50px;
     font-size: 20px;
     margin-bottom: 70px;
 }
@@ -201,4 +201,23 @@ footer ul {
 
 .footer-button a {
     color: #fcc9b6;
+}
+
+
+@media screen and (max-width: 1616px) {
+    header {
+        background-image: url(imgs/banner-m.png);
+    }
+}
+
+@media screen and  (max-width: 1444px) {
+    .row-1 {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 1107px) {
+    header {
+        background-image: url(imgs/banner-p.png);
+    }
 }
