@@ -98,14 +98,11 @@ header {
 }
 
 .row-1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 40px;
-    padding: 30px;
-    color: var(--cor04);
-    width: 1400px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 15px;
 }
 
 .row-1 img {
@@ -116,6 +113,9 @@ header {
 .row-1 article {
     margin-left: 15px;
     font-size: 20px;
+    height: 100px;
+    width: 250px;
+    color: var(--cor04);
 }
 
 .row-1 article p {
@@ -212,7 +212,16 @@ footer ul {
 
 @media screen and  (max-width: 1444px) {
     .row-1 {
-        display: flex;
+        display: grid;
+    }
+
+    .row-1 article {
+        height: 200px;
+    }
+
+    .row-images {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
