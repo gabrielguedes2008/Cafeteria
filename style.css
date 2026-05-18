@@ -196,7 +196,6 @@ footer ul {
 
 .footer-button:hover {
     padding: 22px;
-    font-size: 17px;
 }
 
 .footer-button a {
@@ -217,16 +216,89 @@ footer ul {
 
     .row-1 article {
         height: 200px;
+        width: 700px;
+        text-align: center;
+        padding: 10px;
+        margin-bottom: 30px;
     }
 
     .row-images {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
+    .row-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vh;
+    }
 }
 
-@media screen and (max-width: 1107px) {
+@media screen and (max-width: 742px) {
     header {
         background-image: url(imgs/banner-p.png);
+        background-position: left center;
     }
+
+    nav {
+        justify-content: center;
+    }
+
+    nav img {
+        width: 350px;
+    }
+
+    .text-box {
+        color: #130b08;
+    }
+
+    .nav-box {
+        display: none;
+    }
+
+
+
+    .row-images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .row-images img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .row-2 {
+        width: 300px;
+    }
+
+    .middle-text {
+        width: 350px;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .aside-image img {
+        width: 300px;
+        height: 300px;
+    }
+
+
+
+    footer {
+        display: flex;
+    }
+
+    .footer-button {
+        margin-left: 15px;
+    }
+
+    .list-block {
+        display: none;
+    }
+
 }
